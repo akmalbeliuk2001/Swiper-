@@ -1,0 +1,546 @@
+.title {
+  .title_bg {
+    background-image: url("https://images.unsplash.com/photo-1453090927415-5f45085b65c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1148&q=80");
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    left: 0;
+    top: 0;
+  }
+  .title-wrap {
+    width: 100vw;
+    .title-content {
+      font-family: $primary-font;
+      margin: 0 3rem;
+      color: #fff;
+      position: relative;
+      h1 {
+        font-weight: 500;
+        font-size: 7rem;
+        line-height: 1;
+        letter-spacing: -2px;
+      }
+    }
+  }
+}
+
+.band-wrap {
+  .band-background {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    left: 0;
+    top: 0;
+    background-position: center;
+  }
+  .band-title {
+    font-family: $secondary-font;
+    color: #fff;
+    position: relative;
+    h1 {
+      font-size: 7rem;
+    }
+  }
+}
+
+.about-wrap {
+  overflow: hidden;
+  .about_background {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    left: 0;
+    top: 0;
+    background-position: center;
+  }
+  .about_background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #000000, #404040);
+    opacity: 0.8;
+  }
+  .about-content {
+    transition: all 1s ease-in-out;
+    transform: translateY(100vh);
+    position: relative;
+    width: 45rem;
+    margin: 0 auto;
+    p {
+      font-size: 1.5rem;
+      color: #fff;
+      line-height: 1.7;
+    }
+  }
+}
+
+.swiper-slide-active {
+  .about-wrap {
+    .about-content {
+      transform: translateY(0);
+    }
+  }
+}
+
+// 1975 song recomendation
+.song_wrap {
+  .song-content {
+    color: #c85c5c;
+    display: flex;
+    .left-song {
+      transition: all 1.5s ease-in;
+      transform: translateX(-100vh);
+      position: absolute;
+      z-index: 3;
+      left: 3%;
+      top: 37%;
+      h1 {
+        font-size: 3rem;
+      }
+      ul {
+        padding-left: 0;
+        text-align: left;
+        list-style: none;
+        font-size: 1.5rem;
+      }
+    }
+    .right-song {
+      background-image: url("https://data.junkee.com/wp-content/uploads/2015/11/Shore.jpg");
+      height: 80vh;
+      position: absolute;
+      width: 100%;
+      top: 10%;
+      left: 15%;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: all 1.5s ease-in;
+      transform: translateX(100vw);
+    }
+  }
+}
+
+.swiper-slide-active {
+  .song_wrap {
+    .song-content {
+      .left-song {
+        transform: translateX(0);
+      }
+      .right-song {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+// MF DOOM song recomendation
+.section9-wrap {
+  .content-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: black;
+    color: wheat;
+    .left-section9 {
+      flex: 2;
+      background-image: url("https://gazettereview.com/wp-content/uploads/2018/08/mf-doom.jpg");
+      height: 100vh;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+    .right-section9 {
+      flex: 1;
+      .section9-recomendation {
+        top: 25%;
+        position: absolute;
+        right: 6%;
+        .song-list {
+          text-align: right;
+          font-size: 1.5rem;
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+.bg_2 {
+  background-image: url("https://nawacita.co/wp-content/uploads/2018/03/540971-20151217-the-1975.jpg");
+}
+.bg_3 {
+  background-image: url("https://media.pitchfork.com/photos/62e95612f06d3dfc239e4b71/3:2/w_3525,h_2350,c_limit/The-1975.jpg");
+}
+.bg_4 {
+  background-image: url("https://images.fanart.tv/fanart/mf-doom-5433f9a3043e0.jpg");
+}
+.bg_5 {
+  background-image: url("https://akamai.sscdn.co/uploadfile/letras/fotos/e/3/7/4/e3745f304ba8111771e028e9e12513bd.jpg");
+}
+.bg_6 {
+  background-image: url("https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_auto,w_1400/fl_lossy,pg_1/rdhzayxlpteo0vqd18e6/anderson-paak-k-pops?fimg-ssr-default");
+}
+.bg_7 {
+  background-image: url("https://www.biography.com/.image/t_share/MTg5MjcwNDI4NDc5Mzk5MDQw/gettyimages-1069243334.jpg");
+}
+.bg_8 {
+  background-image: url("https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/2019/05/05/586119936.jpeg");
+}
+.bg_9 {
+  background-image: url("https://asset.kompas.com/crops/Zrf6Y6-3eLr6-JNR9E9CKWahGus=/0x0:0x0/750x500/data/photo/2019/12/01/5de3207052b6c.jpg");
+}
+.bg_10 {
+  background-image: url("https://mmc.tirto.id/image/2018/07/05/seringai-photo-2018-by-rendha-rais.jpg");
+}
+.bg_11 {
+  background-image: url("https://i.ytimg.com/vi/ZfUbSD_iV0k/sddefault.jpg");
+}
+
+// Anderson recomendation
+.anderson-recomendation {
+  .anderson-content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .anderson-left {
+      background-image: url("https://i.scdn.co/image/ab6761610000e5eb96287bd47570ff13f0c01496");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      flex: 1;
+      width: 100%;
+      height: 100vh;
+    }
+    .anderson-right {
+      transition: all 1s ease-in;
+      transform: translateX(100vh);
+      text-align: left;
+      flex: 1;
+      h1 {
+        font-size: 3rem;
+      }
+      .song-list {
+        padding-left: 0;
+        li {
+          font-size: 1.5rem;
+          list-style: none;
+        }
+      }
+    }
+  }
+}
+
+.swiper-slide-active {
+  .anderson-content {
+    .anderson-right {
+      transform: translateX(0);
+    }
+  }
+}
+
+// Baskara songs
+.baskara-recomendation {
+  text-align: left;
+  width: 100vw;
+  height: 100vh;
+  .baskara-content {
+    margin-top: 15vh;
+    padding: 0 5rem;
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .baskara-songs {
+      padding-left: 0;
+      li {
+        list-style: none;
+        font-size: 1.3rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+// Seringai songs
+.seringai-wrap {
+  background-color: #e4dccf;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  .seringai-content {
+    h1 {
+      font-size: 10rem;
+      line-height: 0.8;
+      font-weight: 800;
+      color: #c21010;
+      transition: all 2s ease-out;
+      transform: translateY(-100vh);
+    }
+    .seringai-songs {
+      color: #357c3c;
+      margin-top: -50px;
+      list-style: none;
+      font-size: 1.5rem;
+      line-height: 1.5;
+      transition: all 2s ease-out;
+      transform: translateY(-100vh);
+    }
+  }
+}
+
+.swiper-slide-active {
+  .seringai-content {
+    h1 {
+      transform: translateY(0);
+    }
+    .seringai-songs {
+      transform: translateY(0);
+    }
+  }
+}
+
+// Closing
+.opening {
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  font-family: $primary-font;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 33;
+  background-color: #3ab0ff;
+  .opening-content {
+    width: 90%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    span {
+      display: inline-block;
+      font-size: 7vw;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 2vw;
+      text-shadow: 0 15px 25px rgba($color: #000000, $alpha: 0.2);
+      position: relative;
+      transform: translateY(-100vh);
+    }
+  }
+}
+
+// Animation
+.swiper-slide-active {
+  .zoom-animation {
+    animation: zoom 10s ease-in-out;
+  }
+  .opening-text {
+    animation: fade 5s ease-in;
+  }
+  .band-title {
+    animation: come-in 3s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  }
+  // .about_animation {
+  //   animation: to_top 0.45s linear;
+  // }
+  .opening .opening-content span {
+    animation: fall 2s forwards;
+  }
+  @keyframes zoom {
+    0% {
+      transform: scale(1.3);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes come-in {
+    0% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  // @keyframes to_top {
+  //   0% {
+  //     transform: translateY(100vh);
+  //   }
+  //   100% {
+  //     transform: translateY(0);
+  //   }
+  // }
+  @keyframes fall {
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .opening .opening-content span:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  .opening .opening-content span:nth-child(2) {
+    animation-delay: 0.7s;
+  }
+  .opening .opening-content span:nth-child(3) {
+    animation-delay: 0.8s;
+  }
+  .opening .opening-content span:nth-child(4) {
+    animation-delay: 1s;
+  }
+  .opening .opening-content span:nth-child(5) {
+    animation-delay: 1.2s;
+  }
+  .opening .opening-content span:nth-child(6) {
+    animation-delay: 1.4s;
+  }
+  .opening .opening-content span:nth-child(7) {
+    animation-delay: 1.6s;
+  }
+  .opening .opening-content span:nth-child(8) {
+    animation-delay: 1.8s;
+  }
+}
+
+// Responsive
+@media only screen and (max-width: 768px) {
+  .title {
+    .title-wrap {
+      .title-content {
+        h1 {
+          font-size: 5rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .band-wrap {
+    .band-title h1 {
+      font-size: 5rem;
+    }
+  }
+  .about-wrap {
+    .about-content {
+      width: 80%;
+      p {
+        font-size: 17px;
+      }
+    }
+  }
+  .song_wrap .song-content .left-song {
+    left: 10%;
+    top: 10%;
+    text-align: left;
+  }
+  .section9-wrap .content-wrap .right-section9 .section9-recomendation {
+    text-align: right;
+  }
+  .anderson-recomendation .anderson-contenet .anderson-right {
+    margin: 25px;
+  }
+  .baskara-recomendation .baskara-content {
+    h1 {
+      font-size: 2rem;
+    }
+    P {
+      line-height: 1.5;
+    }
+    .baskara-songs li {
+      list-style: none;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+  .seringai-wrap .seringai-content {
+    h1 {
+      font-size: 6rem;
+    }
+    .seringai-songs {
+      margin-top: -25px;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .title {
+    .title-wrap {
+      .title-content {
+        h1 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+  .band-wrap {
+    .band-title h1 {
+      font-size: 3rem;
+    }
+  }
+  .about-wrap {
+    .about-content {
+      width: 80%;
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .anderson-recomendation .anderson-contenet .anderson-right {
+    text-align: left;
+    margin: 25px;
+    h1 {
+      font-size: 2rem;
+    }
+    .song-list li {
+      font-size: 1rem;
+    }
+  }
+  .baskara-recomendation .baskara-content {
+    h1 {
+      font-size: 2rem;
+    }
+    P {
+      line-height: 1.5;
+    }
+    .baskara-songs li {
+      list-style: none;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+  .seringai-wrap .seringai-content {
+    h1 {
+      font-size: 5rem;
+    }
+    .seringai-songs {
+      margin-top: -25px;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+}
