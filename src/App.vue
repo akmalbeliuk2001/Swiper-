@@ -11,11 +11,11 @@
             <div class="title-wrap opening-text">
               <div class="title-content">
                 <h1>Musicians you should listen to</h1>
-                <p>
+                <!-- <p>
                   "Music expresses what cannot be said and what impossible to
                   keep silent." <br />
                   Victor Hugo
-                </p>
+                </p> -->
               </div>
             </div>
           </div>
